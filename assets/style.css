@@ -68,6 +68,21 @@
     text-shadow: none;
   }
 
+  .about h2 {
+    padding: 50px;
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.55vw;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .about p {
+      font-size: 20px;
+      padding: 50px;
+  }
+
   .contact {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
@@ -133,4 +148,20 @@
      object-fit: cover;
      vertical-align: bottom;
 
+ }
+
+ .working h2 {
+    padding: 60px;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.55vw;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+ }
+
+ .working {
+     padding: 30px;
  }
