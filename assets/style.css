@@ -1,3 +1,4 @@
+/*MAIN BODY STYLING*/
 :root {
     --primary-color: #e8c5d4;
     --secondary-color: #845a6d;
@@ -26,6 +27,20 @@ body{
     
 }
 
+.title {
+    color: var(--tertiary-color);
+    font-size: 50px;
+    font-style: italic;
+    padding-top: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.About-me, .Work, .Contact-me {
+    margin-left: 14%;
+    padding: 0 19px;
+    text-align: center;
+ }
+/*Styling of header*/
 header{
     height: 43%;
     width: 19%;
@@ -59,6 +74,7 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/*ABOUT ME SECTION STYLING*/
 
 .me{
     color: var(--primary-color);
@@ -68,20 +84,6 @@ header nav ul li a:hover {
     font-size: 30px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-.title {
-    color: var(--tertiary-color);
-    font-size: 50px;
-    font-style: italic;
-    padding-top: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.About-me, .Work, .Contact-me {
-    margin-left: 14%;
-    padding: 0 19px;
-    text-align: center;
- }
 
  .About-me p {
     text-align: center;
@@ -100,6 +102,8 @@ header nav ul li a:hover {
     border-radius: 100px;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
 }
+/*SEPERATE STYLING OF 1ST APPLICATION IN WORK SECTION*/
+/*WORK SECTION STYLING*/
 
 .Work div ul{
     display: flex;
@@ -144,7 +148,8 @@ header nav ul li a:hover {
     text-align: center;
     margin-left: 14%;
 }
-
+/*SEPERATE STYLING OF 1ST APPLICATION IN WORK SECTION*/
+/*It comes after the work section to override other declarations*/
 .main p {
     color: var(--secondary-color);
 }
@@ -164,6 +169,8 @@ header nav ul li a:hover {
 .main img {
     width: 50%;
 }
+
+/*CONTACT SECTION*/
 
 .contact {
     background-color: var(--tertiary-color);
@@ -219,6 +226,9 @@ header nav ul li a:hover {
     text-shadow: none;
 
   }
+
+  /*MOBILE RESPONSIVNESS SECTION*/
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 1295px) {
     header nav ul li a {
         text-align: center;
@@ -264,7 +274,7 @@ header nav ul li a:hover {
 
 
 }
-
+/* MEDIA QUERY FOR EVEN SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
       .me {
           font-size: 25px;
@@ -313,7 +323,7 @@ header nav ul li a:hover {
 
 
   }
-
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
       header {
           width: 22%;
@@ -367,7 +377,7 @@ header nav ul li a:hover {
 
 
   }
-
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
       header {
           width: 24%;
