@@ -237,8 +237,9 @@ header nav ul li a:hover {
 
     .me {
         text-align: center;
-        margin-top: 11%;
-        font-size: 24px;
+        margin-top: 10%;
+        font-size: 26px;
+        width: 90%;
     }
 
     header {
@@ -380,7 +381,7 @@ header nav ul li a:hover {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
       header {
-          width: 24%;
+          width: 25%;
       }
       
 
@@ -404,9 +405,21 @@ header nav ul li a:hover {
       }
 
       .Work div ul li h4 {
-          font-size: 17px;
+          font-size: 15px;
           margin-left: -30%;
 
+      }
+
+      .Work img {
+          width: 190%;
+      }
+
+      .main img {
+          width: 70%
+      }
+
+      .title {
+          font-size: 30px;
       }
 
   }
