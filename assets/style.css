@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #FBE7C6;
-    --secondary-color: #A0E7E5;
-    --tertiary-color:#FFAEBC;
+    --primary-color: #e8c5d4;
+    --secondary-color: #845a6d;
+    --tertiary-color:#3a1726;
 
 }
 
@@ -19,6 +19,7 @@ a{
     text-decoration: none;
 }
 
+
 body{
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--primary-color);
@@ -35,6 +36,7 @@ header{
     margin: 0px;
     border-radius: 100px;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li {
@@ -45,6 +47,7 @@ header nav ul li a {
     color:var(--primary-color);
     text-align: center;
     font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
@@ -52,6 +55,7 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     padding: 5px;
     border-radius: 10px;
+    text-shadow: none;
 }
 
 
@@ -60,13 +64,15 @@ header nav ul li a:hover {
     padding-bottom: 40px;
     padding-top: 5px;
     font-size: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .title {
     color: var(--tertiary-color);
     font-size: 50px;
     font-style: italic;
-    padding: 20px;
+    padding-top: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .About-me, .Work, .Contact-me {
@@ -82,20 +88,169 @@ header nav ul li a:hover {
     padding: 30px 0;
     margin: 0 auto;
     color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about {
     background: var(--secondary-color);
     width: 75%;
     margin: auto;
-    border-radius: 150px;
+    border-radius: 100px;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
 }
 
-.work {
-    
+.Work div ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
 }
 
-.working {
-    
+.Work div ul li {
+    width: 35%;
+    margin: 50px; 
 }
+
+
+.Work div ul li h4{
+    color:var(--secondary-color);
+    text-align: center;
+    font-size: 30px;
+}
+
+.Work div ul li:hover {
+  opacity: 0.5;
+  border-color: var(--secondary-color);
+
+}
+
+.Work img {
+    width:100%;
+    border: solid 10px;
+    border-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.working h2 {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 100px;
+    width: 75%;
+    text-align: center;
+    margin-left: 14%;
+}
+
+.main p {
+    color: var(--secondary-color);
+}
+
+.main h4 {
+    color:var(--secondary-color);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main:hover {
+    opacity: 0.5;
+    border-color: var(--secondary-color);
+}
+
+.main img {
+    width: 50%;
+}
+
+.contact {
+    background-color: var(--tertiary-color);
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+    opacity: 0.7;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 14%;
+    padding: 10px;
+
+  }
+
+  .contact a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  .contact h2 {
+      color:var(--primary-color);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+  }
+  
+  .contact nav {
+    margin: 7px 0;
+  }
+  
+  .contact nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+
+  }
+  
+  .contact nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .contact nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+
+  }
+
+
+  @media screen and (max-width: 980px) {
+      .me {
+          font-size: 20px;
+          text-align: center;
+          margin-top: 20%;
+      }
+
+      header {
+          padding: 0px;
+      }
+
+      header nav ul li a {
+          font-size: 18px;
+          text-align: center;
+          width: 120%;
+      }
+
+      .contact {
+          padding: 0px;
+      }
+
+      .contact nav ul li a {
+          padding-bottom: 50px;
+      }
+
+  }
+
+  @media screen and (max-width: 768px) {
+      .title {
+
+      }
+
+  }
+
+  @media screen and (max-width: 575px) {
+
+  }
