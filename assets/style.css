@@ -27,20 +27,21 @@ body{
 }
 
 header{
-    height: 50%;
-    width: 14%;
+    height: 43%;
+    width: 19%;
     position: fixed;
     background-color: var(--tertiary-color);
     opacity: 0.6;
     padding: 30px;
-    margin: 0px;
+    margin: 40px;
     border-radius: 100px;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li {
-    padding: 20px;
+    padding: 15px;
+    text-align: center;
 }
 
 header nav ul li a {
@@ -61,7 +62,8 @@ header nav ul li a:hover {
 
 .me{
     color: var(--primary-color);
-    padding-bottom: 40px;
+    text-align: center;
+    padding-bottom: 20px;
     padding-top: 5px;
     font-size: 30px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -171,7 +173,9 @@ header nav ul li a:hover {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    margin: 14%;
+    margin-left: 14%;
+    margin-right: 11%;
+    margin-bottom: 5%;
     padding: 10px;
 
   }
@@ -215,42 +219,184 @@ header nav ul li a:hover {
     text-shadow: none;
 
   }
+  @media screen and (max-width: 1295px) {
+    header nav ul li a {
+        text-align: center;
+        width: 150%;
+    }
 
+    .me {
+        text-align: center;
+        margin-top: 11%;
+        font-size: 24px;
+    }
+
+    header {
+        padding: 0px;
+        height: 40%;
+        width: 19%;
+    }
+
+    .contact {
+        padding: 20px;
+        width: 85%;
+    }
+
+    .contact h2 {
+        font-size: 29px;
+    }
+
+    .contact nav ul li a {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .Work div ul {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        width: 105%;
+    }
+
+
+}
 
   @media screen and (max-width: 980px) {
       .me {
-          font-size: 20px;
+          font-size: 25px;
           text-align: center;
           margin-top: 20%;
       }
 
       header {
           padding: 0px;
+          width:20%;
+          padding-bottom: 0px;
+          
       }
 
       header nav ul li a {
           font-size: 18px;
           text-align: center;
-          width: 120%;
+          padding-top: 0px;
       }
 
       .contact {
-          padding: 0px;
+          padding:20px;
+          width: 100%;
+          margin: 0px;
+          flex-wrap: nowrap;
       }
 
       .contact nav ul li a {
           padding-bottom: 50px;
+        
       }
+
+      .contact nav ul {
+          justify-content: none;
+          flex-wrap: nowrap;
+      }
+
+      .contact h2 {
+          font-size: 22px;
+      }
+
+
+      .title {
+          font-size: 40px;
+      }
+
 
   }
 
   @media screen and (max-width: 768px) {
-      .title {
-
+      header {
+          width: 22%;
+          margin-left: 2%;
       }
+
+      .me {
+          font-size: 25px;
+      }
+
+      header nav ul li a {
+          font-size: 19px;
+      }
+
+      .contact h2 {
+          font-size: 20px;
+          
+      }
+
+      .contact nav ul li a {
+          font-size: 16px ;
+      }
+
+      .contact {
+          margin-left: -21%;
+          text-align: center;
+          width: 124%;
+          padding: 20px;
+      }
+
+      .Work img{
+          width: 140%;
+          margin-left: -60%;
+      }
+
+      .main img {
+          width: 60%;
+          margin-left: 4%;
+      }
+
+      .main h4 {
+          font-size: 26px;
+      }
+
+      .Work div ul li h4 {
+          width: 100%;
+          font-size: 20px;
+          margin-left: -30%;
+      }
+
+
 
   }
 
   @media screen and (max-width: 575px) {
+      header {
+          width: 24%;
+      }
+      
+
+      .contact h2 {
+          font-size: 17px;
+      }
+
+      .contact {
+          width: 126%;
+          margin-left: -23%;
+      }
+
+      .contact nav ul li a {
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 16px;
+      }
+
+      .main h4 {
+          font-size: 20px;
+      }
+
+      .Work div ul li h4 {
+          font-size: 17px;
+          margin-left: -30%;
+
+      }
 
   }
