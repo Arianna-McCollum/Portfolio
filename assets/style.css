@@ -42,7 +42,7 @@ body{
  }
 /*Styling of header*/
 header{
-    height: 43%;
+    height: 45%;
     width: 19%;
     position: fixed;
     background-color: var(--tertiary-color);
@@ -244,7 +244,7 @@ header nav ul li a:hover {
 
     header {
         padding: 0px;
-        height: 40%;
+        height: 50%;
         width: 19%;
     }
 
@@ -287,6 +287,7 @@ header nav ul li a:hover {
           padding: 0px;
           width:20%;
           padding-bottom: 0px;
+          height: 50%;
           
       }
 
@@ -329,6 +330,7 @@ header nav ul li a:hover {
       header {
           width: 22%;
           margin-left: 2%;
+          height: 50%
       }
 
       .me {
@@ -382,6 +384,7 @@ header nav ul li a:hover {
   @media screen and (max-width: 575px) {
       header {
           width: 25%;
+          height: 50%;
       }
       
 
