@@ -125,9 +125,10 @@ header nav ul li a:hover {
 
 
 .Work div ul li h4{
-    color:var(--secondary-color);
+    color:var(--tertiary-color);
     text-align: center;
     font-size: 30px;
+    
 }
 
 .Work div ul li:hover {
@@ -160,7 +161,7 @@ header nav ul li a:hover {
 }
 
 .main h4 {
-    color:var(--secondary-color);
+    color:var(--tertiary-color);
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
