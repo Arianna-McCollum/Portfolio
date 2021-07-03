@@ -102,6 +102,10 @@ header nav ul li a:hover {
     border-radius: 100px;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
 }
+
+.about img {
+    border-radius: 100px;
+}
 /*SEPERATE STYLING OF 1ST APPLICATION IN WORK SECTION*/
 /*WORK SECTION STYLING*/
 
@@ -137,6 +141,7 @@ header nav ul li a:hover {
     border: solid 10px;
     border-color: var(--secondary-color);
     padding: 10px;
+    border-radius: 100px;
 }
 
 .working h2 {
